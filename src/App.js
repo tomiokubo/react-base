@@ -1,6 +1,14 @@
-/* eslint-disable react/react-in-jsx-scope */
+import React from 'react';
+import Login from './pages/login';
+import GlobalStyle from './styles/GlobalStyle';
+
 function App() {
-  return <h1>Hello World!</h1>;
+  return (
+    <>
+      <Login />
+      <GlobalStyle />
+    </>
+  );
 }
 
 export default App;
