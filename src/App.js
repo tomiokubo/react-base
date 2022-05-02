@@ -7,6 +7,7 @@ function App() {
     <>
       <Login />
       <GlobalStyle />
+      <button>Enviar</button>
     </>
   );
 }
