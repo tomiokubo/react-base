@@ -5,6 +5,7 @@ import GlobalStyle from './styles/GlobalStyle';
 import Header from './components/Header';
 import AppRoutes from './routes';
 import history from './services/history';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Header />
       <AppRoutes />
       <GlobalStyle />
-      <button>Enviar</button>
+      <ToastContainer autoClose={3000} className="toast-container" />
     </Router>
   );
 }
