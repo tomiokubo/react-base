@@ -1,21 +1,6 @@
 import { createStore } from 'redux';
+import rootReducer from './modules/rootReducer';
 
-const initalState = {
-  clickedButton: false,
-};
-
-const reducer = (state = initalState, action) => {
-  switch (action.type) {
-    case 'BUTTON_CLICKED': {
-      const newState = { ...state };
-      newState.clickedButton = !newState.clickedButton;
-      return newState;
-    }
-    default:
-      return state;
-  }
-};
-
-const store = createStore(reducer);
+const store = createStore(rootReducer);
 
 export default store;

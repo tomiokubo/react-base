@@ -2,14 +2,13 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { Container } from '../../styles/GlobalStyle';
 import { Title } from './styled';
+import * as exampleActions from '../../store/modules/example/actions';
 
 export default function Login() {
   const dispatch = useDispatch();
   function handleClick(e) {
     e.preventDefault();
-    dispatch({
-      type: 'BUTTON_CLICKED',
-    });
+    dispatch(exampleActions.clickButton());
   }
   return (
     <Container>
